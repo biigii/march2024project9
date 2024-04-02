@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project 9</title>
-    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <a href="">home</a>
-        <a href="">about</a>
-        <a href="">contact</a>
-      </nav>
-    </header>
-    <h1>hello sass</h1>
-    <!-- <button class="btn btn-danger">button 1</button>
-    <button class="btn btn-warning">button 2</button> -->
+    <h1>position static, relative, absolute, fixed, sticky</h1>
 
-    <button class="btn-danger">button 1</button>
-    <button class="btn-warning">button 2</button>
+    <section class="position-absolute">
+      <h2>position absolute</h2>
+      <div class="box">1</div>
+      <div class="box box-absolute">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </section>
+
+    <section class="position-relative">
+      <h2>position relative</h2>
+      <div class="box">1</div>
+      <div class="box box-relative">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </section>
+    
+    <section class="position-static">
+      <h2>position static</h2>
+      <!-- .box*4>{$} -->
+      <div class="box">1</div>
+      <div class="box box-static">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </section>
+
   </body>
 </html>

@@ -1,0 +1,59 @@
+$box-color: #e7bc39;
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+section.position-static,
+section.position-relative,
+section.position-absolute {
+    margin-bottom: 10px;
+    width: 700px;
+    height: 600px;
+    border: 2px solid;
+    border-radius: 20px;
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        border: 2px dashed;
+        margin: 10px;
+        background-color: $box-color;
+        text-align: center;
+        line-height: 100px;
+        font-size: 50px;
+    }
+    .box-static {
+        background-color: #159ce0;
+        position: static;
+    }
+    .box-relative {
+        background-color: #eb28ee;
+        position: relative;
+        // now i have access to 4 new css properties 
+        // top bottom left right and z-index
+        top: 150px;
+        left: 60px;
+        z-index: -1;
+    }
+    .box-absolute {
+        background-color: #79ec0e;
+        position: absolute;
+        // now i have access to 4 new css properties 
+        // top bottom left right and z-index
+        // top: 130px;
+        // right: 100px;
+        bottom: 0;
+        right: 0
+    }
+}
+
+
+section.position-absolute {
+    position: relative;
+}
