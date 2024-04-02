@@ -1,0 +1,58 @@
+@use "./variables" as var;
+
+body {
+  background-color: var.$secondary;
+}
+
+header {
+  height: 150px;
+  background-color: #efcb60;
+  nav.navigation {
+    text-align: center;
+    height: 100%;
+    line-height: 150px;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 0 30px;
+      text-transform: capitalize;
+      color: var.$primary;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// .btn {
+//   width: 150px;
+//   height: 50px;
+//   font-size: 24px;
+//   border-radius: 10px
+// }
+
+// .btn-danger {
+//   background-color: #f22;
+// }
+
+// .btn-warning {
+//   background-color: #eec00a;
+// }
+
+%btn {
+  width: 150px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  @extend %btn;
+  background-color: #f11;
+}
+
+.btn-warning {
+  @extend %btn;
+  background-color: #eec00a;
+}

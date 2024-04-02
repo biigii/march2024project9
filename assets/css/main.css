@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #e99;
+}
+
+header {
+  height: 150px;
+  background-color: #efcb60;
+}
+header nav.navigation {
+  text-align: center;
+  height: 100%;
+  line-height: 150px;
+}
+header nav.navigation a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 30px;
+  text-transform: capitalize;
+  color: #8ce328;
+}
+header nav.navigation a:hover {
+  color: #fff;
+}
+
+.btn-warning, .btn-danger {
+  width: 150px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  background-color: #f11;
+}
+
+.btn-warning {
+  background-color: #eec00a;
+}
+
+h1 {
+  color: #8ce328;
+  font-size: 72px;
+}/*# sourceMappingURL=main.css.map */

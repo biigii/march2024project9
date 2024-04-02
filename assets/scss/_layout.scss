@@ -1,0 +1,28 @@
+@use "./variables" as var;
+
+.container {
+  max-width: var.$site-width;
+  margin: 0 auto;
+  padding: 0 20px
+}
+
+.row {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .column {
+      float: left;
+      padding: 10px;
+      @media (min-width: 1500px) {
+        width: 25%;
+      }
+      @media (max-width: 1500px) and (min-width: 800px) {
+        width: 50%;
+      }
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  }
